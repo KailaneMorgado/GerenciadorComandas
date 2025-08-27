@@ -41,7 +41,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(87, 109);
+            this.lblEmail.Location = new System.Drawing.Point(77, 109);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(66, 23);
             this.lblEmail.TabIndex = 0;
@@ -50,16 +50,16 @@
             // txbEmail
             // 
             this.txbEmail.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmail.Location = new System.Drawing.Point(178, 106);
+            this.txbEmail.Location = new System.Drawing.Point(149, 106);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(153, 32);
+            this.txbEmail.Size = new System.Drawing.Size(238, 32);
             this.txbEmail.TabIndex = 1;
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(88, 170);
+            this.lblSenha.Location = new System.Drawing.Point(78, 170);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(65, 23);
             this.lblSenha.TabIndex = 2;
@@ -68,16 +68,16 @@
             // txbSenha
             // 
             this.txbSenha.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSenha.Location = new System.Drawing.Point(178, 167);
+            this.txbSenha.Location = new System.Drawing.Point(149, 167);
             this.txbSenha.Name = "txbSenha";
-            this.txbSenha.Size = new System.Drawing.Size(153, 32);
+            this.txbSenha.Size = new System.Drawing.Size(238, 32);
             this.txbSenha.TabIndex = 3;
             // 
             // btnEntrar
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.btnEntrar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(178, 225);
+            this.btnEntrar.Location = new System.Drawing.Point(195, 226);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 32);
             this.btnEntrar.TabIndex = 4;
