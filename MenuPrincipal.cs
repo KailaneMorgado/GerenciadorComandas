@@ -12,9 +12,22 @@ namespace GerenciadorComandas
 {
     public partial class MenuPrincipal : Form
     {
-        public MenuPrincipal()
+
+        //Variaveis globais:
+        Model.Usuario usuario = new Model.Usuario();
+
+
+        public MenuPrincipal(Model.Usuario usuario)
         {
             InitializeComponent();
+            this.usuario = usuario; //mostrando que o usuario da minha classe é o usuario do meu parametro
+            lblDescricao.Text = $"  Olá, {usuario.NomeCompleto}! \nEscolha uma das opções abaixo:";
         }
+
+        private void btnComandas_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

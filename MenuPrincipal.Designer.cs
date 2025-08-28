@@ -41,7 +41,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(133, 21);
+            this.lblTitulo.Location = new System.Drawing.Point(132, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(234, 31);
             this.lblTitulo.TabIndex = 0;
@@ -51,11 +51,11 @@
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(30, 73);
+            this.lblDescricao.Location = new System.Drawing.Point(111, 52);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(421, 24);
+            this.lblDescricao.Size = new System.Drawing.Size(240, 48);
             this.lblDescricao.TabIndex = 1;
-            this.lblDescricao.Text = "Olá, {nome usuario}! Escolha uma opção abaixo:";
+            this.lblDescricao.Text = "     Olá, {nome usuario}! \r\nEscolha uma opção abaixo:";
             // 
             // btnComandas
             // 
@@ -71,6 +71,7 @@
             this.btnComandas.TabIndex = 2;
             this.btnComandas.Text = "Comandas";
             this.btnComandas.UseVisualStyleBackColor = false;
+            this.btnComandas.Click += new System.EventHandler(this.btnComandas_Click);
             // 
             // btnProdutos
             // 
