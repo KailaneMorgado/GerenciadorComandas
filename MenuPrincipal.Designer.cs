@@ -51,11 +51,12 @@
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(111, 52);
+            this.lblDescricao.Location = new System.Drawing.Point(126, 54);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(240, 48);
             this.lblDescricao.TabIndex = 1;
             this.lblDescricao.Text = "     Olá, {nome usuario}! \r\nEscolha uma opção abaixo:";
+
             // 
             // btnComandas
             // 
@@ -71,7 +72,7 @@
             this.btnComandas.TabIndex = 2;
             this.btnComandas.Text = "Comandas";
             this.btnComandas.UseVisualStyleBackColor = false;
-            this.btnComandas.Click += new System.EventHandler(this.btnComandas_Click);
+
             // 
             // btnProdutos
             // 
@@ -114,6 +115,7 @@
             this.btnUsuarios.TabIndex = 5;
             this.btnUsuarios.Text = "Usuários";
             this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // MenuPrincipal
             // 

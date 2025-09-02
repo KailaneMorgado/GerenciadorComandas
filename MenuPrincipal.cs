@@ -24,10 +24,11 @@ namespace GerenciadorComandas
             lblDescricao.Text = $"  Olá, {usuario.NomeCompleto}! \nEscolha uma das opções abaixo:";
         }
 
-        private void btnComandas_Click(object sender, EventArgs e)
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
         {
-
+            FormUsuarios formUsuarios = new FormUsuarios(usuario);
+            formUsuarios.ShowDialog(); //Mostrar o form
         }
-
     }
 }
