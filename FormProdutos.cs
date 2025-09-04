@@ -12,9 +12,26 @@ namespace GerenciadorComandas
 {
     public partial class FormProdutos : Form
     {
-        public FormProdutos()
-        {
+        Model.Usuario usuario;
+        public FormProdutos(Model.Usuario usuario)
+        {   //construtor
             InitializeComponent();
+            this.usuario = usuario;
+            ListarCategoriasCmb();
+        }
+
+        public void ListarCategoriasCmb()
+        {
+            Model.Categoria categoria = new Model.Categoria();
+
+            //Tabela p/ receber o resultado do SELECT:
+            DataTable tabela = categoria.Listar();
+
+            foreach (DataRow dr in tabela.Rows)
+            {
+                cmbCategoriaCadastrar.Items.Add($"{dr["id"]} - {dr["nome"]}");
+                cmbCategoriaEditar.Items.Add($"{dr["id"]} - {dr["nome"]}");
+            }
         }
     }
 }

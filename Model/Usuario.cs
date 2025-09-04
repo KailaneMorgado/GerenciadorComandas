@@ -57,7 +57,6 @@ namespace GerenciadorComandas.Model
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);
-            string senhahash = EasyEncryption.SHA.ComputeSHA256Hash(Senha);
             cmd.Prepare();
             DataTable tabela = new DataTable();
             tabela.Load(cmd.ExecuteReader());

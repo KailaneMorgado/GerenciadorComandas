@@ -56,7 +56,6 @@
             this.lblDescricao.Size = new System.Drawing.Size(240, 48);
             this.lblDescricao.TabIndex = 1;
             this.lblDescricao.Text = "     Olá, {nome usuario}! \r\nEscolha uma opção abaixo:";
-
             // 
             // btnComandas
             // 
@@ -72,7 +71,7 @@
             this.btnComandas.TabIndex = 2;
             this.btnComandas.Text = "Comandas";
             this.btnComandas.UseVisualStyleBackColor = false;
-
+            this.btnComandas.Click += new System.EventHandler(this.btnComandas_Click);
             // 
             // btnProdutos
             // 
@@ -87,6 +86,7 @@
             this.btnProdutos.TabIndex = 3;
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.UseVisualStyleBackColor = false;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // btnCaixa
             // 
@@ -101,6 +101,7 @@
             this.btnCaixa.TabIndex = 4;
             this.btnCaixa.Text = "Caixa";
             this.btnCaixa.UseVisualStyleBackColor = false;
+            this.btnCaixa.Click += new System.EventHandler(this.btnCaixa_Click);
             // 
             // btnUsuarios
             // 
