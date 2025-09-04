@@ -121,19 +121,22 @@
   <data name="Pessoa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pessoa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Pessoa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pessoa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Pessoa4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pessoa4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pessoa3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pessoa3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pessoa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pessoa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wishlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wishlist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wishlist1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wishlist1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="verde_musgo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\verde_musgo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wishlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wishlist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

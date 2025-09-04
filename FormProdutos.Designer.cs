@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdutos));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grbEditar = new System.Windows.Forms.GroupBox();
+            this.cmbCategoriaEditar = new System.Windows.Forms.ComboBox();
             this.lblCategoriaEditar = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
             this.txbPrecoEditar = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.lblSelecioneApagar = new System.Windows.Forms.Label();
             this.lblProdutos = new System.Windows.Forms.Label();
-            this.cmbCategoriaEditar = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grbCadastrar = new System.Windows.Forms.GroupBox();
             this.cmbCategoriaCadastrar = new System.Windows.Forms.ComboBox();
@@ -82,6 +82,15 @@
             this.grbEditar.TabIndex = 7;
             this.grbEditar.TabStop = false;
             this.grbEditar.Text = "Editar";
+            // 
+            // cmbCategoriaEditar
+            // 
+            this.cmbCategoriaEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoriaEditar.FormattingEnabled = true;
+            this.cmbCategoriaEditar.Location = new System.Drawing.Point(58, 94);
+            this.cmbCategoriaEditar.Name = "cmbCategoriaEditar";
+            this.cmbCategoriaEditar.Size = new System.Drawing.Size(176, 21);
+            this.cmbCategoriaEditar.TabIndex = 7;
             // 
             // lblCategoriaEditar
             // 
@@ -183,15 +192,6 @@
             this.lblProdutos.Size = new System.Drawing.Size(112, 31);
             this.lblProdutos.TabIndex = 9;
             this.lblProdutos.Text = "Produtos";
-            // 
-            // cmbCategoriaEditar
-            // 
-            this.cmbCategoriaEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoriaEditar.FormattingEnabled = true;
-            this.cmbCategoriaEditar.Location = new System.Drawing.Point(58, 94);
-            this.cmbCategoriaEditar.Name = "cmbCategoriaEditar";
-            this.cmbCategoriaEditar.Size = new System.Drawing.Size(176, 21);
-            this.cmbCategoriaEditar.TabIndex = 7;
             // 
             // pictureBox1
             // 
