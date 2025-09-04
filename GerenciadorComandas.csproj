@@ -175,8 +175,5 @@
   <ItemGroup>
     <None Include="Resources\wishlist.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verde_musgo.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

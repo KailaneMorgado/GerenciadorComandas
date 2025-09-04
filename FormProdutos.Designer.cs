@@ -186,6 +186,7 @@
             // 
             // cmbCategoriaEditar
             // 
+            this.cmbCategoriaEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoriaEditar.FormattingEnabled = true;
             this.cmbCategoriaEditar.Location = new System.Drawing.Point(58, 94);
             this.cmbCategoriaEditar.Name = "cmbCategoriaEditar";
@@ -194,7 +195,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GerenciadorComandas.Properties.Resources.wishlist;
             this.pictureBox1.Location = new System.Drawing.Point(457, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 51);
@@ -221,6 +221,7 @@
             // 
             // cmbCategoriaCadastrar
             // 
+            this.cmbCategoriaCadastrar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoriaCadastrar.FormattingEnabled = true;
             this.cmbCategoriaCadastrar.Location = new System.Drawing.Point(58, 97);
             this.cmbCategoriaCadastrar.Name = "cmbCategoriaCadastrar";
