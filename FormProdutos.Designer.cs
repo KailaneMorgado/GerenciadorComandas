@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdutos));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.grbEditar = new System.Windows.Forms.GroupBox();
             this.cmbCategoriaEditar = new System.Windows.Forms.ComboBox();
             this.lblCategoriaEditar = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.lblSelecioneApagar = new System.Windows.Forms.Label();
             this.lblProdutos = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picboxProduto = new System.Windows.Forms.PictureBox();
             this.grbCadastrar = new System.Windows.Forms.GroupBox();
             this.cmbCategoriaCadastrar = new System.Windows.Forms.ComboBox();
             this.lblCategoriaCadastro = new System.Windows.Forms.Label();
@@ -51,20 +51,21 @@
             this.lblPrecoCadastro = new System.Windows.Forms.Label();
             this.txbNomeCadastro = new System.Windows.Forms.TextBox();
             this.lblNomeCadastro = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.grbEditar.SuspendLayout();
             this.grbApagar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxProduto)).BeginInit();
             this.grbCadastrar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvProdutos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(105, 69);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(597, 305);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProdutos.Location = new System.Drawing.Point(105, 69);
+            this.dgvProdutos.Name = "dgvProdutos";
+            this.dgvProdutos.Size = new System.Drawing.Size(597, 305);
+            this.dgvProdutos.TabIndex = 0;
+            this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
             // 
             // grbEditar
             // 
@@ -114,6 +115,7 @@
             this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click_1);
             // 
             // txbPrecoEditar
             // 
@@ -172,6 +174,7 @@
             this.btnApagar.TabIndex = 4;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // lblSelecioneApagar
             // 
@@ -193,14 +196,15 @@
             this.lblProdutos.TabIndex = 9;
             this.lblProdutos.Text = "Produtos";
             // 
-            // pictureBox1
+            // picboxProduto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(457, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.picboxProduto.Image = global::GerenciadorComandas.Properties.Resources.wishlist;
+            this.picboxProduto.Location = new System.Drawing.Point(457, 12);
+            this.picboxProduto.Name = "picboxProduto";
+            this.picboxProduto.Size = new System.Drawing.Size(49, 51);
+            this.picboxProduto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxProduto.TabIndex = 10;
+            this.picboxProduto.TabStop = false;
             // 
             // grbCadastrar
             // 
@@ -250,6 +254,7 @@
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // txbPrecoCadastro
             // 
@@ -289,24 +294,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(206)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(800, 595);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picboxProduto);
             this.Controls.Add(this.lblProdutos);
             this.Controls.Add(this.grbApagar);
             this.Controls.Add(this.grbEditar);
             this.Controls.Add(this.grbCadastrar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvProdutos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produtos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
             this.grbEditar.ResumeLayout(false);
             this.grbEditar.PerformLayout();
             this.grbApagar.ResumeLayout(false);
             this.grbApagar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxProduto)).EndInit();
             this.grbCadastrar.ResumeLayout(false);
             this.grbCadastrar.PerformLayout();
             this.ResumeLayout(false);
@@ -316,7 +321,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProdutos;
         private System.Windows.Forms.GroupBox grbCadastrar;
         private System.Windows.Forms.Label lblPrecoCadastro;
         private System.Windows.Forms.TextBox txbNomeCadastro;
@@ -335,7 +340,7 @@
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Label lblSelecioneApagar;
         private System.Windows.Forms.Label lblProdutos;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picboxProduto;
         private System.Windows.Forms.ComboBox cmbCategoriaCadastrar;
         private System.Windows.Forms.ComboBox cmbCategoriaEditar;
     }
